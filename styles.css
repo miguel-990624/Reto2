@@ -1,0 +1,40 @@
+#header{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation{
+    align-self: center;
+    flex: 1;
+}
+
+#pokedex{}
+
+#fire,#water,#plant{
+    display: flex;
+}
+
+.fire,.water,.plant{
+    flex: 1;
+    width: 20%;
+}
+
+#fire{
+    background-color: blue;
+}
+
+.fire:nth-child(1),.fire:nth-child(2){
+    background-color: yellow;
+}
+
+.fire:last-child{
+    background-color: red;
+}
+
+.water:nth-child(even){
+    background-color: red;
+}
+
+.water:nth-child(odd){
+    background-color: green;
+}
